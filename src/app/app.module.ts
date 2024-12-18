@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,12 @@ import { BlogComponent } from './core-components/blog/blog.component';
 import { ContactComponent } from './core-components/contact/contact.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { CommonService } from './shared/common.service';
+import { PhoneComponent } from './common/phone/phone.component';
+import { EmailComponent } from './common/email/email.component';
+import { SocialLinksComponent } from './common/social-links/social-links.component';
+import { AuthLinksComponent } from './common/auth-links/auth-links.component';
+import { MenuComponent } from './common/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +35,18 @@ import { FooterComponent } from './common/footer/footer.component';
     BlogComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PhoneComponent,
+    EmailComponent,
+    SocialLinksComponent,
+    AuthLinksComponent,
+    MenuComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule,
+    BrowserModule, BrowserAnimationsModule, HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ CommonService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
