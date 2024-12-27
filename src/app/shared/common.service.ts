@@ -14,5 +14,13 @@ export class CommonService {
   getLoadData(): Observable<any> {
     return this.http.get(this.getURL);
   }
+
+  getUserData(): Observable<any> {
+    return this.http.get(environment.userEndPoints);
+  }
+
+  getPhotoData(): Observable<any> {
+    return this.http.get(environment.photoEndPoints);
+  }
   
 }

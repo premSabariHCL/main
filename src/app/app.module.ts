@@ -22,6 +22,7 @@ import { EmailComponent } from './common/email/email.component';
 import { SocialLinksComponent } from './common/social-links/social-links.component';
 import { AuthLinksComponent } from './common/auth-links/auth-links.component';
 import { MenuComponent } from './common/menu/menu.component';
+import { ButtonComponent } from './common/button/button.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MenuComponent } from './common/menu/menu.component';
     EmailComponent,
     SocialLinksComponent,
     AuthLinksComponent,
-    MenuComponent
+    MenuComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, HttpClientModule,

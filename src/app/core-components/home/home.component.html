@@ -1,5 +1,26 @@
 <section class="bg-emerald-50">
-    <div class="container pt-48 h-[2000px] text-justify">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <div class="container pt-48 text-justify">
+        <div *ngFor="let d of userListObj">
+            <label>{{ d.id }}</label>
+            <label>{{ d.name }}</label>
+            <label>{{ d.company['name'] }}</label>
+            <label>{{ d.address['street'] }} - {{ d.address['city'] }}</label>
+            <label>{{ d.email }}</label>
+            <label>{{ d.phone }}</label>
+        </div>
+        <!-- <div *ngFor="let p of photoListObj">
+            <label>{{ p.id }}</label>
+            <label>{{ p.title }}</label>
+            <label>{{ p.thumbnailUrl }}</label>
+        </div> -->
+        <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. -->
     </div>
 </section>
+<!-- <section>
+    <div class="container py-24 flex gap-5">
+        <app-button name="Test 1" shade="D" animation="C"></app-button>
+        <app-button name="Test 2" size="M" shade="L" animation="C"></app-button>
+        <app-button name="Test 3" size="L" shade="W" animation="C"></app-button>
+        <app-button name="Test 4"></app-button>
+    </div>
+</section> -->

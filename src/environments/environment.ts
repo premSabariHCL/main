@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   domainURL: 'http://localhost',
-  domainPort: '5000'
+  domainPort: '5000',
+  userEndPoints: 'https://jsonplaceholder.typicode.com/users',
+  photoEndPoints: 'https://jsonplaceholder.typicode.com/photos'
 };
 
 /*
